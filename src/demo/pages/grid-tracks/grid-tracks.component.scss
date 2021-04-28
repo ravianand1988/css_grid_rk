@@ -1,0 +1,9 @@
+:host {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 15rem auto auto;
+  grid-template-columns: 15rem min-content auto;
+  grid-template-columns: 15rem max-content auto;
+  grid-template-columns: 15rem minmax(max-content, 50%) auto;
+  grid-template-columns: 15rem fit-content(30rem) fit-content(30rem) auto;
+}

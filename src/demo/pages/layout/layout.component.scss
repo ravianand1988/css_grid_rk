@@ -1,0 +1,11 @@
+:host {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 15rem auto 15rem;
+  grid-template-rows: min-content auto 4em;
+}
+
+header, footer {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
