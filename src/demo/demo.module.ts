@@ -1,6 +1,14 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GridTracksComponent, LayoutComponent } from './pages';
+import { NgModule } from '@angular/core';
+
+import {
+  GridFlowComponent,
+  GridShorthandsComponent,
+  GridTracksComponent,
+  LayoutComponent,
+  ProductsComponent,
+  TrackSizeComponent,
+} from './pages';
 
 @NgModule({
   imports: [
@@ -9,10 +17,10 @@ import { GridTracksComponent, LayoutComponent } from './pages';
   declarations: [
     GridTracksComponent,
     LayoutComponent,
+    GridShorthandsComponent,
+    ProductsComponent,
+    GridFlowComponent,
+    TrackSizeComponent,
   ],
-  exports: [
-    GridTracksComponent,
-    LayoutComponent
-  ]
 })
 export class DemoModule { }

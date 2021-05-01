@@ -1,0 +1,39 @@
+:host {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  // grid-template-columns: repeat(4, 10rem);
+  grid-template-rows: repeat(2, 10rem);
+
+  // grid-auto-flow: column;
+  // writing-mode: vertical-lr;
+
+  // Implicit gird
+  // grid-auto-rows: 5rem;
+  // grid: auto-flow 10rem / 10rem 10rem;
+  // grid: auto-flow 10rem / auto-flow 7rem;
+
+  // weird span of an item
+  // grid-auto-flow: dense row;
+  // grid-auto-flow: dense;
+}
+
+div {
+  // display: grid;
+  place-items: center;
+  border: solid 1px black;
+  // writing-mode: horizontal-tb;
+}
+
+// Implicit grid
+.weird-div {
+  // grid-column-start: 26;
+  // grid-auto-columns: 5rem;
+
+  // weird span of an item
+  // grid-column: span 5;
+
+  // default order is 0, increasing order places the item at last
+  // order: 1;
+  // order: -11;
+}

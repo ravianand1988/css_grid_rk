@@ -9,3 +9,88 @@ header, footer {
   grid-column-start: 1;
   grid-column-end: 4;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***
+// Grid area
+:host {
+  height: 100%;
+  display: grid;
+  // grid-template: min-content auto 4rem / 15rem 1fr minmax(5rem, 10rem);
+  grid-template-areas: "header header header"
+                       "nav    main   aside"
+                       "footer footer footer";
+  grid-template-columns: 15rem auto minmax(5rem, 10rem);
+  grid-template-rows: min-content auto 4rem;
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
+}
+
+*/
+
+/*
+
+// Responsive layout
+:host {
+  display: grid;
+  grid: "header" 4rem
+        "nav   " 5rem
+        "main  " 20rem
+        "aside " 10rem
+        "footer" 4rem /
+        1fr;
+
+  @media screen and (min-width: 600px) {
+    grid: "header header" 4rem
+          "nav    main  " 20rem
+          "aside  aside " 10rem
+          "footer footer" 4rem /
+          1fr 2fr;
+  }
+
+  @media screen and (min-width: 800px) {
+    grid: "header header header" 4rem
+          "nav    main   aside" auto
+          "footer footer footer" 4rem /
+          15rem auto minmax(5rem, 10rem);
+  }
+}
+
+*/

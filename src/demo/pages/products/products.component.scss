@@ -1,0 +1,115 @@
+
+:host {
+  display: grid;
+  // grid-template-columns: 15rem auto;
+  // grid-template-rows: min-content auto 4em;
+  grid: auto-flow min-content / repeat(12, 1fr);
+  gap: 1rem;
+}
+
+header, footer {
+  // grid-column-start: 1;
+  // grid-column-end: 13;
+
+  grid-column: 1 / -1 ;
+
+  text-align: center;
+}
+
+nav {
+  grid-column-start: 1;
+  grid-column-end: 4;
+
+  grid-column: 1 / 4;
+}
+
+main {
+  grid-column-start: 4;
+  grid-column-end: 13;
+
+  grid-column: 4 / -1;
+}
+
+.ice-cards {
+  display: grid;
+  gap: 1rem;
+
+  // normal practice
+  grid-template-rows: 8rem;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
+  // shorthand practice 1
+  grid-template: 8rem / repeat(auto-fit, minmax(20rem, 1fr));
+
+  // shorthand practice 2
+  grid: 8rem / repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.img-ice {
+  grid-column-end: span 2;
+
+  // shorthand practice
+  grid-column: span 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapper-ice {
+  background-color: salmon;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns:  repeat(12, 1fr);
+
+  // grid-template-columns: subgrid;
+  // grid-row-gap: 0.5rem;
+
+  > img {
+    grid-column: span 3;
+    border-radius: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+  }
+}

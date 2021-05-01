@@ -1,0 +1,7 @@
+:host {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-columns: 200px 1fr auto;
+  grid-template-columns: 200px auto 1fr;
+  grid-template-columns: 200px minmax(300px, auto) 1fr;
+}

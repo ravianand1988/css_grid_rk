@@ -14,6 +14,10 @@ export class NavSideBarComponent {
     { title: 'Home', path: '/' },
     { title: 'Layout', path: 'layout' },
     { title: 'Grid Tracks', path: 'grid-tracks' },
+    { title: 'Grid Shorthands', path: 'grid-shorthands' },
+    { title: 'Grid Flow', path: 'grid-flow' },
+    { title: 'Track size', path: 'track-size' },
+    { title: 'Products', path: 'products' },
   ];
 
   public currentUrl$ = this.router.events.pipe(

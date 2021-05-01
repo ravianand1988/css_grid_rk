@@ -1,5 +1,8 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
+import { DemoModule } from 'src/demo/demo.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,8 +15,11 @@ import { NavSideBarComponent } from './components';
     NavSideBarComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
-    AppRoutingModule
+    CommonModule,
+
+    DemoModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
